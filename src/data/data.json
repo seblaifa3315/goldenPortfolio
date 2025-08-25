@@ -1,0 +1,163 @@
+{
+    "hero": {
+        "photoBackground":"https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
+        "roles": "Web Dev, Mern Stack",
+        "rolesFrench": "Web Dev, Mern Stack",
+        "greet": "Hello, I'm",
+        "greetFrench": "Salut, c'est",
+        "firstName": "Sebastien",
+        "firstNameFrench": "Seb",
+        "lastName": "Laifa",
+        "lastNameFrench": "Laïfa",
+        "connection": "and I'm a",
+        "connectionFrench": "et je suis",
+        "title": "Full Stack Web Developer",
+        "titleFrench": "développeur web Full Stack",
+        "description": "I design and develop intuitive full-stack applications with a focus on performance, UX, and elegant design. Based in Las Vegas, I'm ready to bring your next project to life.",
+        "descriptionFrench": "Je conçois et développe des applications full-stack intuitives, avec un accent sur la performance, l’expérience utilisateur et un design élégant. Basé à Las Vegas, je suis prêt à donner vie à votre prochain projet.",
+        "buttonProjects": "My Projects",
+        "buttonProjectsFrench": "Mes projets",
+        "buttonContact": "Contact Me",
+        "buttonContactFrench": "Me Contacter"
+    },
+    "about": {
+        "profilePicture":"https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
+        "supTitle": "Get To Know More",
+        "supTitleFrench": "En savoir plus",
+        "title": "About Me",
+        "titleFrench": "A propos de moi",
+        "subTitle": "\"Driven by curiosity. Powered by creativity.\"",
+        "subTitleFrench": "\"Guidé par la curiosité. Porté par la créativité.\"",
+        "paraTitle": "Creative Full Stack Web Developer based in Las Vegas, USA",
+        "paraTitleFrench": "Développeur web full stack créatif basé à Las Vegas, aux États-Unis.",
+        "education": "Education",
+        "educationFrench": "Etudes",
+        "bachelorCS": "B.S. in Computer Science",
+        "bachelorCSFrench": "Bachelor en Informatique (USA)",
+        "bachelorManagement": "B.S. in Sport Management",
+        "bachelorManagementFrench": "Licence en Management du Sport",
+        "experience": "Experience",
+        "experienceFrench": "Expérience",
+        "experienceYears": "2+ years",
+        "experienceYearsFrench": "Plus de 2 ans",
+        "experienceRole": "Full Stack MERN Developer",
+        "experienceRoleFrench": "Développeur Full Stack MERN",
+        "description": "I'm passionate about building modern, user-friendly web apps from front to back. With a strong foundation in React, Node.js, and databases, I thrive on turning ideas into beautifully functional websites. I love writing clean code and collaborating with others to bring creative visions to life.",
+        "descriptionFrench": "Je suis passionné par la création d'applications web modernes et conviviales, du front-end au back-end. Avec une solide maîtrise de React, Node.js et des bases de données, j'aime transformer des idées en sites web beaux et fonctionnels. J'adore écrire du code propre et collaborer avec d'autres pour donner vie à des visions créatives.",
+        "btnCV": "Download CV",
+        "btnCVFrench": "Télécharger mon CV",
+        "btnCVView": "View CV Online",
+        "btnCVViewFrench": "Voir CV En Ligne"
+    },
+    "skills": {
+        "supTitle": "Explore my",
+        "supTitleFrench": "Découvrez mes",
+        "title": "Technical Skills",
+        "titleFrench": "Compétences Techniques",
+        "skillCategories": [
+            {
+                "title": "Frontend",
+                "icon": "Code2",
+                "skills": [
+                    { "name": "React.js", "icon": "SiReact", "color": "#61DAFB" },
+                    { "name": "HTML5", "icon": "SiHtml5", "color": "#E44D26" },
+                    { "name": "CSS3", "icon": "SiCss3", "color": "#1572B6" },
+                    { "name": "JavaScript", "icon": "SiJavascript", "color": "#F7DF1E" },
+                    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#38BDF8" }
+                ]
+            },
+            {
+                "title": "Backend",
+                "icon": "Server",
+                "skills": [
+                    { "name": "Node.js", "icon": "SiNodedotjs", "color": "#339933" },
+                    { "name": "Express.js", "icon": "SiExpress", "color": "var(--foreground)" },
+                    { "name": "MongoDB", "icon": "SiMongodb", "color": "#47A248" },
+                    { "name": "SQL", "icon": "FaDatabase", "color": "#336791" }
+                ]
+            },
+            {
+                "title": "Other",
+                "icon": "Wrench",
+                "skills": [
+                    { "name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6" },
+                    { "name": "Git", "icon": "SiGit", "color": "#F05032" },
+                    { "name": "GitHub", "icon": "SiGithub", "color": "var(--foreground)" }
+                ]
+            }
+        ]
+    },
+    "portfolio": {
+        "supTitle": "Latest Work",
+        "supTitleFrench": "Derniers Projets",
+        "title": "Projects I'm Proud Of",
+        "titleFrench": "Projets dont je suis fier",
+        "projects": [
+            {
+                "title": "Portfolio Website",
+                "description": "A modern personal website built with React and Tailwind.",
+                "descriptionFrench": "Un site personnel moderne construit avec React et Tailwind.",
+                "image": "/assets/portfolioThumbnail.png",
+                "tags": ["React", "Tailwind", "Framer Motion"],
+                "link": "https://yourwebsite.com"
+            },
+            {
+                "title": "E-commerce App",
+                "description": "A full-stack e-commerce application with Stripe integration.",
+                "descriptionFrench": "Une application e-commerce full-stack avec intégration Stripe.",
+                "image": "/assets/portfolioThumbnail.png",  
+                "tags": ["Next.js", "Stripe", "MongoDB"],
+                "link": "https://github.com/yourname/ecommerce-app"
+            }
+        ]
+    },
+    "contact": {
+        "supTitle": "Get In Touch",
+        "supTitleFrench": "Contactez-moi",
+
+        "title": "Let's build something great together!",
+        "titleFrench": "Construisons quelque chose de grand ensemble !",
+
+        "subTitle": "Let's Talk",
+        "subTitleFrench": "Discutons",
+
+
+        "text": "I'm currently available to take on new projects. Feel free to send me a message about anything you'd like me to work on. You can contact me anytime.",
+        "textFrench": "Je suis actuellement disponible pour de nouveaux projets. N'hésitez pas à m'envoyer un message à propos de ce sur quoi vous aimeriez que je travaille. Vous pouvez me contacter à tout moment.",
+
+
+        "name": "Your Name",
+        "nameFrench": "Nom",
+
+        "nameInput": "Enter your name",
+        "nameInputFrench": "Entrez votre nom",
+
+        "email": "Your Email",
+        "emailFrench": "Email",
+
+        "emailInput": "Enter your email",
+        "emailInputFrench": "Entrez votre email",
+
+        "message": "Write your message here",
+        "messageFrench": "Entrez votre message ici",
+
+        "messageInput": "Enter your message",
+        "messageInputFrench": "Entrez votre message",
+
+        "toastSuccess": "Message sent successfully!",
+        "toastSuccessFrench": "Votre message a été envoyé avec succès!",
+
+        "toastFail": "Oops! Something went wrong. Please try again.",
+        "toastFailFrench": "Oops! Une error est survenue. Essayez de nouveau.",
+
+        "button": "Submit now",
+        "buttonFrench": "Envoyer"
+    },
+    "footer": {
+        "rights": "All rights reserved.",
+        "rightsFrench": "Tous droits réservés.",
+
+        "built": "Built with React, TailwindCSS, and love for clean code.",
+        "builtFrench": "Conçu avec React, TailwindCSS et l'amour du code propre."
+    }
+}
