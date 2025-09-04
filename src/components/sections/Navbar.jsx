@@ -100,12 +100,19 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Button */}
-      <button
+      {/* <button
         onClick={toggleMenu}
         className={`md:hidden z-50 hover:scale-110 transition-transform duration-300"
         aria-label="Toggle menu ${
                 menuOpen && "text-wite"
               }`}
+      >
+        {menuOpen ? <X size={24} /> : <Menu size={24} />}
+      </button> */}
+
+      <button
+        onClick={toggleMenu}
+        className={`${menuOpen && "text-foreground"} md:hidden z-50 hover:scale-110 transition-transform duration-300`}
       >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -118,7 +125,7 @@ const Navbar = () => {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.4, ease: "easeInOut" }}
-            className="fixed top-0 left-0 w-full h-screen bg-backgroundNavbarOpen text-white flex flex-col justify-center items-center gap-10 z-40"
+            className="fixed top-0 left-0 w-full h-screen bg-backgroundNavbarOpen text-foreground flex flex-col justify-center items-center gap-10 z-40"
           >
             <ul className="flex flex-col items-center gap-6 text-lg">
               {menuItems.map(([en, fr], index) => (
