@@ -99,15 +99,8 @@
                 "descriptionFrench": "Un site personnel moderne construit avec React et Tailwind.",
                 "image": "/assets/portfolioThumbnail.png",
                 "tags": ["React", "Tailwind", "Framer Motion"],
-                "link": "https://yourwebsite.com"
-            },
-            {
-                "title": "E-commerce App",
-                "description": "A full-stack e-commerce application with Stripe integration.",
-                "descriptionFrench": "Une application e-commerce full-stack avec intégration Stripe.",
-                "image": "/assets/portfolioThumbnail.png",  
-                "tags": ["Next.js", "Stripe", "MongoDB"],
-                "link": "https://github.com/yourname/ecommerce-app"
+                "viewLink": "https://www.sebastienlaifa.com/",
+                "codeLink": "https://github.com/seblaifa3315/goldenPortfolio"
             }
         ]
     },

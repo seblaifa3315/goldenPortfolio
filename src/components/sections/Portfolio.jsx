@@ -62,7 +62,7 @@ const Portfolio = () => {
                   href={project.viewLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-gold hover:underline"
+                  className="inline-flex items-center text-sm font-medium text-gold hover:underline cursor-pointer"
                 >
                   {language ? "View Project" : "Voir le projet"}
                   <ExternalLink size={16} className="ml-1" />
@@ -72,7 +72,7 @@ const Portfolio = () => {
                   href={project.codeLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center text-sm font-medium text-gold hover:underline"
+                  className="inline-flex items-center text-sm font-medium text-gold hover:underline cursor-pointer"
                 >
                   {language ? "Source Code" : "Code source"}
                   <SiGithub size={16} className="ml-1" />
