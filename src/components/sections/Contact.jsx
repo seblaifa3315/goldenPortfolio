@@ -4,7 +4,6 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import { Toaster, toast } from "react-hot-toast";
 import { motion } from "framer-motion";
-import { Mail, PhoneCall, MapPin, Github } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import { FaPhoneVolume, FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
@@ -35,10 +34,14 @@ const Contact = () => {
     const toastFail = language ? data.contact.toastFail : data.contact.toastFailFrench;
     const button = language ? data.contact.button : data.contact.buttonFrench;
 
+    const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+    const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+
     const handleSubmit = (e) => {
         e.preventDefault();
         emailjs
-            .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, e.target, import.meta.env.VITE_PUBLIC_KEY)
+            .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
             .then(() => {
                 toast.success(toastSuccess);
                 setFormData({ from_name: "", email: "", message: "" });
