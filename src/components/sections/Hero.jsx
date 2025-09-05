@@ -27,7 +27,7 @@ const Hero = () => {
                 initial={{ scale: 5 }}
                 animate={{ scale: 1}}
                 transition={{ duration: 1, ease: "easeOut" }}
-                className="absolute inset-0 z-0 bg-cover bg-top bg-no-repeat bg-fixed"
+                className="absolute inset-0 z-0 bg-cover bg-top bg-no-repeat md:bg-fixed"
                 style={{
                     backgroundImage: `linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), url(${bgImage})`,
                 }}
