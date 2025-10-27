@@ -60,10 +60,13 @@
                 "icon": "Code2",
                 "skills": [
                     { "name": "React.js", "icon": "SiReact", "color": "#61DAFB" },
+                    { "name": "Next.js", "icon": "SiNextdotjs", "color": "#000000" },
                     { "name": "HTML5", "icon": "SiHtml5", "color": "#E44D26" },
                     { "name": "CSS3", "icon": "SiCss3", "color": "#1572B6" },
                     { "name": "JavaScript", "icon": "SiJavascript", "color": "#F7DF1E" },
-                    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#38BDF8" }
+                    { "name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6" },
+                    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#38BDF8" },
+                    { "name": "Framer Motion", "icon": "SiFramer", "color": "#0055FF" }
                 ]
             },
             {
@@ -72,6 +75,7 @@
                 "skills": [
                     { "name": "Node.js", "icon": "SiNodedotjs", "color": "#339933" },
                     { "name": "Express.js", "icon": "SiExpress", "color": "var(--foreground)" },
+                    { "name": "Nest.js", "icon": "SiNestjs", "color": "#E0234E" },
                     { "name": "MongoDB", "icon": "SiMongodb", "color": "#47A248" },
                     { "name": "SQL", "icon": "FaDatabase", "color": "#336791" }
                 ]
@@ -80,9 +84,9 @@
                 "title": "Other",
                 "icon": "Wrench",
                 "skills": [
-                    { "name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6" },
                     { "name": "Git", "icon": "SiGit", "color": "#F05032" },
-                    { "name": "GitHub", "icon": "SiGithub", "color": "var(--foreground)" }
+                    { "name": "GitHub", "icon": "SiGithub", "color": "var(--foreground)" },
+                    { "name": "Supabase", "icon": "SiSupabase", "color": "#3ECF8E" }
                 ]
             }
         ]
