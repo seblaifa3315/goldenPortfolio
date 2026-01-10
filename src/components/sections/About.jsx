@@ -119,8 +119,8 @@ const About = () => {
           {/* Resume Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <a
-              href="/resume_sebastien_laifa.pdf"
-              download="resume_sebastien_laifa.pdf"
+              href="/resume_sebastien_laifa.docx"
+              download="resume_sebastien_laifa.docx"
               target="_blank"
               className="flex items-center gap-2 bg-gold text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-transparent hover:text-gold border border-gold transition-all duration-300"
             >
