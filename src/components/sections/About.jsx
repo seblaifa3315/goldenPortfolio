@@ -28,6 +28,9 @@ const About = () => {
   const downloadLink = data.about.downloadLink;
   const btnCVView = language ? data.about.btnCVView : data.about.btnCVViewFrench;
   const viewLink = data.about.viewLink;
+  const resumeDocx = language ? "/resume_sebastien_laifa.docx" : "/resume_sebastien_laifa_french.docx";
+  const resumePdf = language ? "/resume_sebastien_laifa.pdf" : "/resume_sebastien_laifa_french.pdf";
+
 
 
   return (
@@ -119,8 +122,8 @@ const About = () => {
           {/* Resume Buttons */}
           <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
             <a
-              href="/resume_sebastien_laifa.docx"
-              download="resume_sebastien_laifa.docx"
+              href={resumeDocx}
+              download={resumeDocx}
               target="_blank"
               className="flex items-center gap-2 bg-gold text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-transparent hover:text-gold border border-gold transition-all duration-300"
             >
@@ -129,7 +132,7 @@ const About = () => {
             </a>
 
             <a
-              href="/resume_sebastien_laifa.pdf"
+              href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 border text-foreground px-5 py-2.5 rounded-full text-sm font-medium hover:bg-foreground hover:text-background border-foreground transition-all duration-300"
