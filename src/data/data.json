@@ -105,6 +105,15 @@
                 "tags": ["React", "Tailwind", "Framer Motion"],
                 "viewLink": "https://www.sebastienlaifa.com/",
                 "codeLink": "https://github.com/seblaifa3315/goldenPortfolio"
+            },
+            {
+                "title": "Book Landing Page",
+                "description": "A promotional website for an author's book, featuring purchase links and author information.",
+                "descriptionFrench": "Un site promotionnel pour le livre d'un auteur, avec des liens d'achat et des informations sur l'auteur.",
+                "image": "/assets/bookSiteThumbnail.png",
+                "tags": ["Next.js", "Tailwind", "Framer Motion"],
+                "viewLink": "https://book-website-tan.vercel.app",
+                "codeLink": "https://github.com/seblaifa3315/book-website"
             }
         ]
     },
