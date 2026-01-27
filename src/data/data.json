@@ -123,6 +123,15 @@
                 "tags": ["Next.js", "Tailwind", "Framer Motion", "shadcn/ui"],
                 "viewLink": "https://tail-shell.vercel.app",
                 "codeLink": "https://github.com/seblaifa3315/TailShell"
+            },
+            {
+                "title": "Bracuum",
+                "description": "A B2C e-commerce website for Bracuum, a revolutionary 2-in-1 portable floor cleaner that combines sweeping and vacuuming. Features a modern minimalist design with smooth animations, pre-order system, and Stripe payment integration.",
+                "descriptionFrench": "Un site e-commerce B2C pour Bracuum, un nettoyeur de sol portable révolutionnaire 2-en-1 combinant balayage et aspiration. Présente un design moderne et minimaliste avec des animations fluides, un système de précommande et une intégration de paiement Stripe.",
+                "image": "/assets/bracuumThumbnail.png",
+                "tags": ["Next.js", "Tailwind", "Framer Motion", "shadcn/ui", "Supabase", "Stripe", "Prisma"],
+                "viewLink": "https://bracuum.vercel.app",
+                "codeLink": "https://github.com/seblaifa3315/Bracuum"
             }
         ]
     },
