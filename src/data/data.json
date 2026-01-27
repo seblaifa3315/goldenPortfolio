@@ -1,6 +1,6 @@
 {
     "hero": {
-        "photoBackground":"https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
+        "photoBackground": "https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
         "roles": "Web Dev, Mern Stack",
         "rolesFrench": "Web Dev, Mern Stack",
         "greet": "Hello, I'm",
@@ -21,7 +21,7 @@
         "buttonContactFrench": "Me Contacter"
     },
     "about": {
-        "profilePicture":"https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
+        "profilePicture": "https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
         "supTitle": "Get To Know More",
         "supTitleFrench": "En savoir plus",
         "title": "About Me",
@@ -59,34 +59,34 @@
                 "title": "Frontend",
                 "icon": "Code2",
                 "skills": [
-                    { "name": "React.js", "icon": "SiReact", "color": "#61DAFB" },
-                    { "name": "Next.js", "icon": "SiNextdotjs", "color": "#000000" },
-                    { "name": "HTML5", "icon": "SiHtml5", "color": "#E44D26" },
-                    { "name": "CSS3", "icon": "SiCss3", "color": "#1572B6" },
-                    { "name": "JavaScript", "icon": "SiJavascript", "color": "#F7DF1E" },
-                    { "name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6" },
-                    { "name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#38BDF8" },
-                    { "name": "Framer Motion", "icon": "SiFramer", "color": "#0055FF" }
+                    {"name": "React.js", "icon": "SiReact", "color": "#61DAFB"},
+                    {"name": "Next.js", "icon": "SiNextdotjs", "color": "#000000"},
+                    {"name": "HTML5", "icon": "SiHtml5", "color": "#E44D26"},
+                    {"name": "CSS3", "icon": "SiCss3", "color": "#1572B6"},
+                    {"name": "JavaScript", "icon": "SiJavascript", "color": "#F7DF1E"},
+                    {"name": "TypeScript", "icon": "SiTypescript", "color": "#3178C6"},
+                    {"name": "Tailwind CSS", "icon": "SiTailwindcss", "color": "#38BDF8"},
+                    {"name": "Framer Motion", "icon": "SiFramer", "color": "#0055FF"}
                 ]
             },
             {
                 "title": "Backend",
                 "icon": "Server",
                 "skills": [
-                    { "name": "Node.js", "icon": "SiNodedotjs", "color": "#339933" },
-                    { "name": "Express.js", "icon": "SiExpress", "color": "var(--foreground)" },
-                    { "name": "Nest.js", "icon": "SiNestjs", "color": "#E0234E" },
-                    { "name": "MongoDB", "icon": "SiMongodb", "color": "#47A248" },
-                    { "name": "SQL", "icon": "FaDatabase", "color": "#336791" }
+                    {"name": "Node.js", "icon": "SiNodedotjs", "color": "#339933"},
+                    {"name": "Express.js", "icon": "SiExpress", "color": "var(--foreground)"},
+                    {"name": "Nest.js", "icon": "SiNestjs", "color": "#E0234E"},
+                    {"name": "MongoDB", "icon": "SiMongodb", "color": "#47A248"},
+                    {"name": "SQL", "icon": "FaDatabase", "color": "#336791"}
                 ]
             },
             {
                 "title": "Other",
                 "icon": "Wrench",
                 "skills": [
-                    { "name": "Git", "icon": "SiGit", "color": "#F05032" },
-                    { "name": "GitHub", "icon": "SiGithub", "color": "var(--foreground)" },
-                    { "name": "Supabase", "icon": "SiSupabase", "color": "#3ECF8E" }
+                    {"name": "Git", "icon": "SiGit", "color": "#F05032"},
+                    {"name": "GitHub", "icon": "SiGithub", "color": "var(--foreground)"},
+                    {"name": "Supabase", "icon": "SiSupabase", "color": "#3ECF8E"}
                 ]
             }
         ]
@@ -114,6 +114,15 @@
                 "tags": ["Next.js", "Tailwind", "Framer Motion"],
                 "viewLink": "https://book-website-tan.vercel.app",
                 "codeLink": "https://github.com/seblaifa3315/book-website"
+            },
+            {
+                "title": "TailShell",
+                "description": "A B2B marketing website for TailShell portable waterproof seat covers, featuring a clean and minimalist design with smooth animations and vendor inquiry system.",
+                "descriptionFrench": "Un site marketing B2B pour les housses de siège portables et imperméables TailShell, avec un design propre et minimaliste, des animations fluides et un système de demande pour les revendeurs.",
+                "image": "/assets/tailShellThumbnail.png",
+                "tags": ["Next.js", "Tailwind", "Framer Motion", "shadcn/ui"],
+                "viewLink": "https://tail-shell.vercel.app",
+                "codeLink": "https://github.com/seblaifa3315/TailShell"
             }
         ]
     },
@@ -127,10 +136,8 @@
         "subTitle": "Let's Talk",
         "subTitleFrench": "Discutons",
 
-
         "text": "I'm currently available to take on new projects. Feel free to send me a message about anything you'd like me to work on. You can contact me anytime.",
         "textFrench": "Je suis actuellement disponible pour de nouveaux projets. N'hésitez pas à m'envoyer un message à propos de ce sur quoi vous aimeriez que je travaille. Vous pouvez me contacter à tout moment.",
-
 
         "name": "Your Name",
         "nameFrench": "Nom",
