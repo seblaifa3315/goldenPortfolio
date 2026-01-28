@@ -67,15 +67,16 @@ const Hero = () => {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-white text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-[1.1] tracking-tight"
+              className="text-white font-bold tracking-tight"
             >
-              {greet}{" "}
-              <span className="text-gold">{firstName}</span>
-              <br />
-              <span className="text-gold">{lastName}</span>
-              <span className="text-white/60 font-normal">,</span>
-              <br />
-              <span className="text-white/80 text-3xl md:text-4xl lg:text-5xl font-normal">
+              {/* Name line - stays together */}
+              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
+                {greet}{" "}
+                <span className="text-gold whitespace-nowrap">{firstName} {lastName}</span>
+                <span className="text-white/60 font-normal">,</span>
+              </span>
+              {/* Title line - always on its own line */}
+              <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white/80 mt-2 leading-snug">
                 {connection} <span className="text-gold font-semibold">{title}</span>
               </span>
             </motion.h1>
@@ -86,7 +87,7 @@ const Hero = () => {
               initial="initial"
               animate="animate"
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="text-white/70 text-base md:text-lg max-w-xl leading-relaxed"
+              className="text-white/70 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed"
             >
               {description}
             </motion.p>
