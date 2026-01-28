@@ -31,6 +31,18 @@ const Navbar = () => {
     return () => { document.body.style.overflow = ""; };
   }, [menuOpen]);
 
+  // Close mobile menu when resizing to desktop
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768 && menuOpen) {
+        setMenuOpen(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [menuOpen]);
+
   const menuItems = [
     ["Home", "Accueil"],
     ["About", "À propos"],
@@ -77,8 +89,8 @@ const Navbar = () => {
         onClick={closeMenu}
         className="relative text-2xl font-bold z-50 group"
       >
-        <span className={`text-gold transition-colors duration-300 group-hover:text-foreground ${scrolled ? "group-hover:text-foreground" : "group-hover:text-white"}`}>Seb</span>
-        <span className="transition-colors duration-300 group-hover:text-gold">.dev</span>
+        <span className={`text-gold transition-colors duration-300 ${scrolled || menuOpen ? "group-hover:text-foreground" : "group-hover:text-white"}`}>Seb</span>
+        <span className={`transition-colors duration-300 group-hover:text-gold ${menuOpen ? "text-foreground" : ""}`}>.dev</span>
       </a>
 
       {/* Desktop Menu */}
