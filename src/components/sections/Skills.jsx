@@ -30,59 +30,74 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="py-24 px-6 md:px-20 lg:px-40 bg-background2 text-foreground space-y-16"
+      className="py-24 px-6 md:px-20 lg:px-40 bg-background2 text-foreground"
     >
       {/* Section Heading */}
       <motion.div
-        className="flex flex-col items-center text-center gap-3"
+        className="flex flex-col items-center text-center mb-16"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <div className="w-20 h-[3px] bg-gradient-to-r from-gold to-transparent rounded-full mb-1" />
-        <p className="text-sm uppercase tracking-widest text-muted-foreground">{supTitle}</p>
-        <h2 className="text-4xl md:text-5xl font-bold">{title}</h2>
+        <div className="flex items-center gap-3 mb-4">
+          <span className="h-px w-8 bg-gold/60" />
+          <p className="text-xs uppercase tracking-[0.2em] text-gold/80 font-medium">
+            {supTitle}
+          </p>
+          <span className="h-px w-8 bg-gold/60" />
+        </div>
+        <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{title}</h2>
       </motion.div>
 
       {/* Skill Categories */}
-      <div className="space-y-14">
+      <div className="space-y-12">
         {skillCategories.map((category, idx) => {
           const CategoryIcon = iconMap[category.icon];
           return (
             <motion.div
               key={idx}
-              className="space-y-6"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1 }}
               viewport={{ once: true }}
             >
               {/* Category Title */}
-              <div className="flex items-center gap-3">
-                <h3 className="text-2xl font-semibold text-gold flex items-center gap-2">
-                  {CategoryIcon && <CategoryIcon size={22} className="text-gold" />}
+              <div className="flex items-center gap-3 mb-6">
+                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gold/10">
+                  {CategoryIcon && <CategoryIcon size={18} className="text-gold" />}
+                </div>
+                <h3 className="text-lg font-semibold text-foreground/90 tracking-wide">
                   {category.title}
                 </h3>
+                <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent ml-2" />
               </div>
 
               {/* Skills Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {category.skills.map((skill, index) => {
                   const SkillIcon = iconMap[skill.icon];
                   return (
                     <motion.div
                       key={index}
                       whileHover={{ scale: 1.03 }}
-                      className="flex flex-col items-center justify-center text-center p-4 rounded-2xl 
-                        bg-white/10 backdrop-blur-md border border-white/20 
-                        shadow-[0_4px_12px_rgba(0,0,0,0.1)] 
-                        transition-all duration-300"
+                      className="group flex flex-col items-center justify-center text-center
+                        py-5 px-3 rounded-xl
+                        bg-white/[0.03] backdrop-blur-sm
+                        border border-white/[0.06]
+                        hover:bg-white/[0.06] hover:border-white/[0.12]
+                        transition-all duration-300 cursor-default"
                     >
                       {SkillIcon && (
-                        <SkillIcon size={36} style={{ color: skill.color }} className="mb-2" />
+                        <SkillIcon
+                          size={32}
+                          style={{ color: skill.color }}
+                          className="mb-3 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                        />
                       )}
-                      <span className="text-sm font-medium text-foreground">{skill.name}</span>
+                      <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors duration-300">
+                        {skill.name}
+                      </span>
                     </motion.div>
                   );
                 })}
