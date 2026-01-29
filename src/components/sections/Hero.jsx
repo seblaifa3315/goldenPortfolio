@@ -1,7 +1,7 @@
 import { useData } from "../../context/DataContext";
 import { useLanguage } from "../../context/LanguageContext";
 import { motion } from "framer-motion";
-import bgImage from "../../assets/portrait.jpg";
+import bgImage from "../../assets/testPortrait.jpg";
 
 const Hero = () => {
   const { data, loading } = useData();
@@ -37,7 +37,7 @@ const Hero = () => {
         className="absolute inset-0 z-0 bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(${bgImage})`,
-          backgroundPosition: "35% top",
+          backgroundPosition: "70% top",
         }}
       />
 

@@ -140,11 +140,11 @@ const Navbar = () => {
             aria-label={language ? "Switch to French" : "Switch to English"}
             className="relative flex items-center gap-1 px-3 py-1.5 rounded-full border border-gold/30 hover:border-gold text-sm font-medium transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
           >
-            <span className={`transition-colors duration-300 ${language ? "text-gold underline underline-offset-4 decoration-1" : "text-foreground/50"}`}>
+            <span className={`transition-colors duration-300 ${language ? "text-gold underline underline-offset-4 decoration-1" : scrolled ? "text-foreground/50" : "text-white/50"}`}>
               EN
             </span>
-            <span className="text-foreground/30">/</span>
-            <span className={`transition-colors duration-300 ${!language ? "text-gold underline underline-offset-4 decoration-1" : "text-foreground/50"}`}>
+            <span className={scrolled ? "text-foreground/50" : "text-white/50"}>/</span>
+            <span className={`transition-colors duration-300 ${!language ? "text-gold underline underline-offset-4 decoration-1" : scrolled ? "text-foreground/50" : "text-white/50"}`}>
               FR
             </span>
           </button>
@@ -221,11 +221,11 @@ const Navbar = () => {
                 aria-label={language ? "Switch to French" : "Switch to English"}
                 className="flex items-center gap-2 px-4 py-2 rounded-full border border-gold/30 hover:border-gold text-base font-medium transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/50"
               >
-                <span className={`transition-all duration-300 ${language ? "text-gold" : "text-foreground/50"}`}>
+                <span className={`transition-all duration-300 ${language ? "text-gold underline underline-offset-4 decoration-1" : "text-foreground/50"}`}>
                   EN
                 </span>
                 <span className="text-foreground/30">/</span>
-                <span className={`transition-all duration-300 ${!language ? "text-gold" : "text-foreground/50"}`}>
+                <span className={`transition-all duration-300 ${!language ? "text-gold underline underline-offset-4 decoration-1" : "text-foreground/50"}`}>
                   FR
                 </span>
               </button>
