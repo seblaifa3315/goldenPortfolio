@@ -73,14 +73,14 @@ const Contact = () => {
 
       {/* Grid Layout */}
       <motion.div
-        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20"
+        className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-stretch"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
         {/* Left Info */}
-        <div className="space-y-8">
+        <div className="flex flex-col gap-8">
           <div>
             <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-4">
               {subTitle}
@@ -90,7 +90,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="flex-1 flex flex-col justify-end space-y-4">
             <a
               href="mailto:seblaifa@hotmail.com"
               className="group flex items-center gap-4 p-4 rounded-xl
