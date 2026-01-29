@@ -70,7 +70,7 @@ const Skills = () => {
                 <h3 className="text-lg font-semibold text-foreground/90 tracking-wide">
                   {category.title}
                 </h3>
-                <div className="flex-1 h-px bg-gradient-to-r from-white/10 to-transparent ml-2" />
+                <div className="divider-line flex-1 h-px ml-2" />
               </div>
 
               {/* Skills Grid */}
@@ -81,11 +81,8 @@ const Skills = () => {
                     <motion.div
                       key={index}
                       whileHover={{ scale: 1.03 }}
-                      className="group flex flex-col items-center justify-center text-center
-                        py-5 px-3 rounded-xl
-                        bg-white/[0.03] backdrop-blur-sm
-                        border border-white/[0.06]
-                        hover:bg-white/[0.06] hover:border-white/[0.12]
+                      className="skill-card group flex flex-col items-center justify-center text-center
+                        py-5 px-3 rounded-xl backdrop-blur-sm
                         transition-all duration-300 cursor-default"
                     >
                       {SkillIcon && (

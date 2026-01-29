@@ -136,3 +136,32 @@ html, body {
 .dark .contact-input:focus {
   background-color: rgba(255, 255, 255, 0.05);
 }
+
+/* Skill cards */
+.skill-card {
+  background-color: var(--backgroundCard);
+  border: 1px solid var(--grey);
+}
+
+.skill-card:hover {
+  border-color: var(--gold);
+}
+
+.dark .skill-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.dark .skill-card:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Divider line */
+.divider-line {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.15), transparent);
+}
+
+.dark .divider-line {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.1), transparent);
+}
