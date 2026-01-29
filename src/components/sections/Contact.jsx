@@ -51,7 +51,26 @@ const Contact = () => {
 
   return (
     <section id="contact" className="py-24 px-6 md:px-20 lg:px-40 bg-background2 text-foreground">
-      <Toaster position="top-right" />
+      <Toaster
+        position="top-right"
+        toastOptions={{
+          duration: 5000,
+          style: {
+            background: 'var(--backgroundCard)',
+            color: 'var(--foreground)',
+            border: '1px solid var(--gold)',
+          },
+          success: {
+            iconTheme: {
+              primary: 'var(--gold)',
+              secondary: 'var(--backgroundCard)',
+            },
+          },
+          error: {
+            duration: 6000,
+          },
+        }}
+      />         
 
       {/* Section Header */}
       <motion.div
