@@ -59,9 +59,13 @@ const About = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.6 }}
       >
-        <p className="text-gold text-xs font-medium uppercase tracking-[0.2em] mb-3">
-          {supTitle}
-        </p>
+        <div className="flex items-center justify-center gap-3 mb-3">
+          <span className="h-px w-8 bg-gold/60" />
+          <p className="text-xs uppercase tracking-[0.2em] text-gold/80 font-medium">
+            {supTitle}
+          </p>
+          <span className="h-px w-8 bg-gold/60" />
+        </div>
         <h2 className="text-foreground text-3xl md:text-4xl font-semibold mb-3">
           {title}
         </h2>
