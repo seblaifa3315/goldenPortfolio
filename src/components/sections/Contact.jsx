@@ -93,25 +93,19 @@ const Contact = () => {
           <div className="flex-1 flex flex-col justify-end space-y-4">
             <a
               href="mailto:seblaifa@hotmail.com"
-              className="group flex items-center gap-4 p-4 rounded-xl
-                bg-white/[0.03] border border-white/[0.06]
-                hover:bg-white/[0.06] hover:border-white/[0.1]
-                transition-all duration-300"
+              className="contact-card group flex items-center gap-4 p-4 rounded-xl transition-all duration-300"
             >
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10">
                 <IoIosMail className="w-5 h-5 text-gold" />
               </div>
-              <span className="text-sm text-foreground/80 group-hover:text-foreground transition-colors duration-300">
+              <span className=" text-sm text-foreground/80 group-hover:text-foreground transition-colors duration-300 ">
                 seblaifa@hotmail.com
               </span>
             </a>
 
             <a
               href="tel:+7024980917"
-              className="group flex items-center gap-4 p-4 rounded-xl
-                bg-white/[0.03] border border-white/[0.06]
-                hover:bg-white/[0.06] hover:border-white/[0.1]
-                transition-all duration-300"
+              className="contact-card group flex items-center gap-4 p-4 rounded-xl transition-all duration-300"
             >
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10">
                 <FaPhoneVolume className="w-4 h-4 text-gold" />
@@ -122,8 +116,7 @@ const Contact = () => {
             </a>
 
             <div
-              className="group flex items-center gap-4 p-4 rounded-xl
-                bg-white/[0.03] border border-white/[0.06]"
+              className="contact-card group flex items-center gap-4 p-4 rounded-xl"
             >
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10">
                 <FaLocationDot className="w-4 h-4 text-gold" />
@@ -137,10 +130,7 @@ const Contact = () => {
               href="https://github.com/seblaifa3315"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-4 p-4 rounded-xl
-                bg-white/[0.03] border border-white/[0.06]
-                hover:bg-white/[0.06] hover:border-white/[0.1]
-                transition-all duration-300"
+              className="contact-card group flex items-center gap-4 p-4 rounded-xl transition-all duration-300"
             >
               <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-gold/10">
                 <FaGithub className="w-5 h-5 text-gold" />
@@ -163,11 +153,8 @@ const Contact = () => {
               onChange={(e) => setFormData({ ...formData, from_name: e.target.value })}
               required
               placeholder={nameInput}
-              className="w-full bg-white/[0.03] px-4 py-3.5 rounded-xl text-sm
-                border border-white/[0.08] text-foreground
-                placeholder-foreground/30
-                focus:outline-none focus:border-gold/50 focus:bg-white/[0.05]
-                transition-all duration-300"
+              className="contact-input w-full px-4 py-3.5 rounded-xl text-sm text-foreground
+                placeholder-foreground/30 transition-all duration-300"
             />
           </div>
 
@@ -180,11 +167,8 @@ const Contact = () => {
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
               placeholder={emailInput}
-              className="w-full bg-white/[0.03] px-4 py-3.5 rounded-xl text-sm
-                border border-white/[0.08] text-foreground
-                placeholder-foreground/30
-                focus:outline-none focus:border-gold/50 focus:bg-white/[0.05]
-                transition-all duration-300"
+              className="contact-input w-full px-4 py-3.5 rounded-xl text-sm text-foreground
+                placeholder-foreground/30 transition-all duration-300"
             />
           </div>
 
@@ -197,11 +181,8 @@ const Contact = () => {
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
               required
               placeholder={messageInput}
-              className="flex-1 w-full bg-white/[0.03] px-4 py-3.5 rounded-xl text-sm
-                border border-white/[0.08] text-foreground
-                placeholder-foreground/30
-                focus:outline-none focus:border-gold/50 focus:bg-white/[0.05]
-                transition-all duration-300 resize-none"
+              className="contact-input flex-1 w-full px-4 py-3.5 rounded-xl text-sm text-foreground
+                placeholder-foreground/30 transition-all duration-300 resize-none"
             />
           </div>
 

@@ -97,3 +97,42 @@ html, body {
   scrollbar-width: thin;
   scrollbar-color: var(--gold) var(--background);
 }
+
+/* Contact section cards and inputs */
+.contact-card {
+  background-color: var(--backgroundCard);
+  border: 1px solid var(--grey);
+}
+
+.contact-card:hover {
+  border-color: var(--gold);
+}
+
+.dark .contact-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.dark .contact-card:hover {
+  background-color: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-input {
+  background-color: var(--backgroundCard);
+  border: 1px solid var(--grey);
+}
+
+.contact-input:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+
+.dark .contact-input {
+  background-color: rgba(255, 255, 255, 0.03);
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark .contact-input:focus {
+  background-color: rgba(255, 255, 255, 0.05);
+}
