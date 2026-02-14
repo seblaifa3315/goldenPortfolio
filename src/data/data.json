@@ -130,7 +130,7 @@
                 "descriptionFrench": "Un site e-commerce B2C pour Bracuum, un nettoyeur de sol portable révolutionnaire 2-en-1 combinant balayage et aspiration. Présente un design moderne et minimaliste avec des animations fluides, un système de précommande et une intégration de paiement Stripe.",
                 "image": "/assets/bracuumThumbnail.png",
                 "tags": ["Next.js", "Tailwind", "Framer Motion", "shadcn/ui", "Supabase", "Stripe", "Prisma"],
-                "viewLink": "https://bracuum.vercel.app",
+                "viewLink": "https://www.sebdev.space",
                 "codeLink": "https://github.com/seblaifa3315/Bracuum"
             }
         ]
