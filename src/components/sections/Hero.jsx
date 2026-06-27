@@ -1,7 +1,7 @@
 import { useData } from "../../context/DataContext";
 import { useLanguage } from "../../context/LanguageContext";
 import { motion } from "framer-motion";
-import bgImage from "../../assets/testPortrait.jpg";
+import bgImage from "../../assets/testPortrait.png";
 
 const Hero = () => {
   const { data, loading } = useData();
@@ -42,7 +42,7 @@ const Hero = () => {
       />
 
       {/* Gradient overlay - darker on left for text readability */}
-      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/90 via-black/70 to-black/40" />
+      <div className="absolute inset-0 z-[1] bg-gradient-to-r from-black/50 via-black/40 to-black/30" />
 
       {/* Content Container */}
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
