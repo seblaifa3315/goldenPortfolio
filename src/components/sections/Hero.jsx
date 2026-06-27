@@ -92,7 +92,7 @@ const Hero = () => {
                 initial="initial"
                 animate="animate"
                 transition={{ duration: 0.6, delay: 0.5 }}
-                className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white/80 mt-2 leading-snug whitespace-nowrap"
+                className="block text-lg sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-normal text-white/80 mt-2 leading-snug md:whitespace-nowrap"
               >
                 <TypedText strings={typedRoles} className="text-gold font-semibold" />
               </motion.span>
