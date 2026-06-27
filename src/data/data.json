@@ -1,24 +1,33 @@
 {
     "hero": {
         "photoBackground": "https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",
-        "roles": "Web Dev, Mern Stack",
-        "rolesFrench": "Web Dev, Mern Stack",
-        "greet": "Hello, I'm",
-        "greetFrench": "Salut, c'est",
+        "roles": "Full Stack Developer",
+        "rolesFrench": "Développeur Full Stack",
+        "greet": "Hi, I'm",
+        "greetFrench": "Salut, je suis",
         "firstName": "Sebastien",
         "firstNameFrench": "Seb",
         "lastName": "Laifa",
         "lastNameFrench": "Laïfa",
-        "connection": "and I'm a",
-        "connectionFrench": "et je suis",
+        "connection": "",
+        "connectionFrench": "",
         "title": "Full Stack Web Developer",
         "titleFrench": "développeur web Full Stack",
-        "description": "I design and develop intuitive full-stack applications with a focus on performance, UX, and elegant design. Based in Las Vegas, I'm ready to bring your next project to life.",
-        "descriptionFrench": "Je conçois et développe des applications full-stack intuitives, avec un accent sur la performance, l'expérience utilisateur et un design élégant. Basé à Las Vegas, je suis prêt à donner vie à votre prochain projet.",
+        "description": "I build web experiences that feel simple on the surface and powerful underneath. From polished interfaces to full-stack applications, I combine thoughtful UX, scalable code, and modern technologies to turn ideas into reliable digital products.",
+        
+        "descriptionFrench": "Je transforme des idées en expériences web simples, élégantes et performantes. Du design d'interface au développement full-stack, je crée des applications modernes avec un code propre, une architecture solide et une vraie attention portée aux utilisateurs.",
         "buttonProjects": "My Projects",
         "buttonProjectsFrench": "Mes projets",
         "buttonContact": "Contact Me",
-        "buttonContactFrench": "Me Contacter"
+        "buttonContactFrench": "Me Contacter",
+        "typedRoles": [
+            "<span class='text-white/80 font-normal'>I am </span>a full stack web developer",
+            "<span class='text-white/80 font-normal'>I solve </span>real business problems"
+        ],
+        "typedRolesFrench": [
+            "<span class='text-white/80 font-normal'>Je suis </span>développeur web full stack",
+            "<span class='text-white/80 font-normal'>Je transforme </span>vos idées en produits"
+        ]
     },
     "about": {
         "profilePicture": "https://res.cloudinary.com/djo8hf6cq/image/upload/v1755805292/me.heic",

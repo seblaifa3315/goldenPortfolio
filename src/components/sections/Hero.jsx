@@ -1,20 +1,22 @@
 import { useData } from "../../context/DataContext";
 import { useLanguage } from "../../context/LanguageContext";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import bgImage from "../../assets/testPortrait.png";
+import TypedText from "../smallComponents/TypedText";
 
 const Hero = () => {
   const { data, loading } = useData();
   const { language } = useLanguage();
+  const { scrollY } = useScroll();
+  const scrollIndicatorOpacity = useTransform(scrollY, [0, 150], [1, 0]);
 
   if (loading) return <div className="min-h-screen" />;
 
   const greet = language ? data.hero.greet : data.hero.greetFrench;
   const firstName = language ? data.hero.firstName : data.hero.firstNameFrench;
   const lastName = language ? data.hero.lastName : data.hero.lastNameFrench;
-  const connection = language ? data.hero.connection : data.hero.connectionFrench;
-  const title = language ? data.hero.title : data.hero.titleFrench;
   const role = language ? data.hero.roles : data.hero.rolesFrench;
+  const typedRoles = language ? data.hero.typedRoles : data.hero.typedRolesFrench;
   const description = language ? data.hero.description : data.hero.descriptionFrench;
   const btnProjects = language ? data.hero.buttonProjects : data.hero.buttonProjectsFrench;
   const btnContact = language ? data.hero.buttonContact : data.hero.buttonContactFrench;
@@ -62,31 +64,46 @@ const Hero = () => {
             </motion.div>
 
             {/* Headline */}
-            <motion.h1
-              variants={fadeInUp}
-              initial="initial"
-              animate="animate"
-              transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-white font-bold tracking-tight"
-            >
-              {/* Name line - stays together */}
-              <span className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight">
-                {greet}{" "}
+            <h1 className="text-white font-bold tracking-tight">
+              {/* Greeting line */}
+              <motion.span
+                variants={fadeInUp}
+                initial="initial"
+                animate="animate"
+                transition={{ duration: 0.6, delay: 0.1 }}
+                className="block text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold text-white/80"
+              >
+                {greet}
+              </motion.span>
+              {/* Name line */}
+              <motion.span
+                variants={fadeInUp}
+                initial="initial"
+                animate="animate"
+                transition={{ duration: 0.6, delay: 0.3 }}
+                className="block text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl leading-tight"
+              >
                 <span className="text-gold whitespace-nowrap">{firstName} {lastName}</span>
                 <span className="text-white/60 font-normal">,</span>
-              </span>
+              </motion.span>
               {/* Title line - always on its own line */}
-              <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white/80 mt-2 leading-snug">
-                {connection} <span className="text-gold font-semibold">{title}</span>
-              </span>
-            </motion.h1>
+              <motion.span
+                variants={fadeInUp}
+                initial="initial"
+                animate="animate"
+                transition={{ duration: 0.6, delay: 0.5 }}
+                className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-normal text-white/80 mt-2 leading-snug whitespace-nowrap"
+              >
+                <TypedText strings={typedRoles} className="text-gold font-semibold" />
+              </motion.span>
+            </h1>
 
             {/* Description */}
             <motion.p
               variants={fadeInUp}
               initial="initial"
               animate="animate"
-              transition={{ duration: 0.6, delay: 0.2 }}
+              transition={{ duration: 0.6, delay: 0.7 }}
               className="text-white/70 text-sm sm:text-base md:text-lg max-w-xl leading-relaxed"
             >
               {description}
@@ -96,7 +113,7 @@ const Hero = () => {
             <motion.div
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 1 }}
-              transition={{ duration: 0.8, delay: 0.3 }}
+              transition={{ duration: 0.8, delay: 0.9 }}
               className="w-16 h-[2px] bg-gold origin-left"
             />
 
@@ -105,12 +122,28 @@ const Hero = () => {
               variants={fadeInUp}
               initial="initial"
               animate="animate"
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
               className="flex flex-wrap gap-4 pt-2"
             >
               <a
+                href="#contact"
+                className="group relative inline-flex items-center gap-2 bg-gold text-white px-8 py-4 rounded-md font-medium text-sm tracking-wide overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-gold/25"
+              >
+                <span className="relative z-10">{btnContact}</span>
+                <svg
+                  className="relative z-10 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg]" />
+              </a>
+
+              <a
                 href="#portfolio"
-                className="group relative inline-flex items-center gap-2 bg-gold text-white px-8 py-4 font-medium text-sm tracking-wide overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-gold/25"
+                className="group relative inline-flex items-center gap-2 bg-white/5 text-white px-8 py-4 rounded-md border border-white/40 font-medium text-sm tracking-wide overflow-hidden transition-all duration-300 hover:border-white hover:bg-white/10"
               >
                 <span className="relative z-10">{btnProjects}</span>
                 <svg
@@ -121,15 +154,7 @@ const Hero = () => {
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
-                <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-              </a>
-
-              <a
-                href="#contact"
-                className="group relative inline-flex items-center gap-2 bg-transparent text-white px-8 py-4 border border-white/30 font-medium text-sm tracking-wide overflow-hidden transition-all duration-300 hover:border-white"
-              >
-                <span className="relative z-10">{btnContact}</span>
-                <span className="absolute inset-0 bg-white/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-[-20deg]" />
               </a>
             </motion.div>
           </div>
@@ -140,20 +165,22 @@ const Hero = () => {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div
+      <motion.a
+        href="#about"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 0.6 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[2] flex flex-col items-center gap-2"
+        style={{ opacity: scrollIndicatorOpacity }}
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-[2] flex flex-col items-center gap-2 cursor-pointer"
       >
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          className="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-2"
-        >
-          <motion.div className="w-1 h-2 bg-gold rounded-full" />
-        </motion.div>
-      </motion.div>
+        <div className="w-6 h-10 rounded-full border-2 border-gold/30 flex items-start justify-center p-2">
+          <motion.div
+            animate={{ y: [0, 12, 0], opacity: [1, 0, 1] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+            className="w-1 h-2 bg-gold rounded-full"
+          />
+        </div>
+      </motion.a>
     </section>
   );
 };
