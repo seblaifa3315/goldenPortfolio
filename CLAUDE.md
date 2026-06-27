@@ -31,7 +31,7 @@ All in `src/components/sections/`, rendered in this order by `App.jsx`:
 | Component | Purpose |
 |-----------|---------|
 | `Navbar.jsx` | Fixed nav with desktop/mobile menus, theme toggle, language switcher, smooth scroll links |
-| `Hero.jsx` | Full-screen intro with background image overlay, Typed.js animation, CTA buttons, scroll indicator |
+| `Hero.jsx` | Full-screen intro with background image overlay, staggered fade-in animations, TypedText typing effect with HTML-styled strings (white prefix + gold keyword), shine-sweep CTA buttons, scroll indicator that fades on scroll and links to #about |
 | `About.jsx` | Bio, education/experience cards, CV download link, portrait image |
 | `Skills.jsx` | 3 skill categories (Frontend/Backend/Other) with dynamic icon mapping from react-icons + lucide-react |
 | `Portfolio.jsx` | Project cards with images, tech tags, live demo and source code links |
@@ -40,13 +40,15 @@ All in `src/components/sections/`, rendered in this order by `App.jsx`:
 
 ### Small Components
 
-- `src/components/smallComponents/TypedText.jsx` — Typed.js wrapper for typing animation in the Hero section
+- `src/components/smallComponents/TypedText.jsx` — Reusable Typed.js wrapper. Accepts `strings` (array) and `className` props. Supports HTML content in strings via `contentType: 'html'` (used for dual-color typed text in Hero). Config: typeSpeed 75, backSpeed 50, loop true, no cursor.
 
 ### Content Data
 
 All text content lives in `src/data/data.json` with English/French variants (e.g., `title` / `titleFrench`). Components read from this file via `useData()` and conditionally render based on `useLanguage()`.
 
 Data sections: `hero`, `about`, `skills` (with nested `skillCategories` array), `portfolio` (with nested `projects` array), `contact`, `footer`.
+
+The `hero` section includes `typedRoles` / `typedRolesFrench` arrays with HTML-formatted strings (e.g., `<span class='text-white/80 font-normal'>I am </span>a full stack web developer`) used by the TypedText component for dual-color typing effects. French text is not a direct translation of English — it is written to sound natural in French.
 
 ### Styling
 

@@ -73,34 +73,46 @@ const About = () => {
       </motion.header>
 
       {/* Main Content */}
-      <motion.div
-        className="grid lg:grid-cols-[280px_1fr] gap-12 lg:gap-16 items-start"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
-      >
+      <div className="grid lg:grid-cols-[280px_1fr] gap-12 lg:gap-16 items-start">
         {/* Portrait */}
-        <div className="mx-auto lg:mx-0">
-          <div className="relative">
+        <motion.div
+          className="mx-auto lg:mx-0"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+        >
+          <div className="group relative">
             <img
               src={portrait}
               alt="Portrait"
-              className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-2xl shadow-lg shadow-foreground/5 hover:shadow-gold/20 hover:shadow-xl transition-all duration-300"
+              className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-2xl shadow-lg shadow-foreground/5 group-hover:shadow-gold/20 group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-500 ease-out"
             />
-            <div className="absolute -bottom-2 -left-2 w-16 h-16 border-l-2 border-b-2 border-gold/40 rounded-bl-2xl" />
+            <div className="absolute -bottom-2 -left-2 w-16 h-16 border-l-2 border-b-2 border-gold/40 rounded-bl-2xl group-hover:-bottom-3 group-hover:-left-3 transition-all duration-500 ease-out" />
           </div>
-        </div>
+        </motion.div>
 
         {/* Content */}
         <div className="text-center lg:text-left">
-          <h3 className="text-foreground text-xl md:text-2xl font-medium mb-6">
+          <motion.h3
+            className="text-foreground text-xl md:text-2xl font-medium mb-6"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+          >
             {paraTitle}
-          </h3>
+          </motion.h3>
 
           {/* Stats Grid */}
           <div className="grid sm:grid-cols-2 gap-4 mb-8">
-            <div className="group p-5 rounded-xl bg-foreground/[0.03] border border-foreground/10 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300 cursor-default">
+            <motion.div
+              className="group p-5 rounded-xl bg-foreground/[0.03] border border-foreground/10 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300 cursor-default"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+            >
               <div className="flex items-center gap-2.5 mb-2 justify-center lg:justify-start">
                 <Brain className="w-4 h-4 text-gold group-hover:scale-110 transition-transform duration-300" />
                 <span className="text-foreground text-sm font-medium">
@@ -110,12 +122,18 @@ const About = () => {
               <p className="text-foreground/70 text-xs leading-relaxed">
                 {bachelorCS}
               </p>
-              <p className="text-foreground/70 text-xs leading-relaxed">
+              <p className="text-foreground/40 text-[11px] leading-relaxed">
                 {bachelorManagement}
               </p>
-            </div>
+            </motion.div>
 
-            <div className="group p-5 rounded-xl bg-foreground/[0.03] border border-foreground/10 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300 cursor-default">
+            <motion.div
+              className="group p-5 rounded-xl bg-foreground/[0.03] border border-foreground/10 hover:-translate-y-1 hover:border-gold/30 transition-all duration-300 cursor-default"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+            >
               <div className="flex items-center gap-2.5 mb-2 justify-center lg:justify-start">
                 <Award className="w-4 h-4 text-gold group-hover:scale-110 transition-transform duration-300" />
                 <span className="text-foreground text-sm font-medium">
@@ -128,36 +146,50 @@ const About = () => {
               <p className="text-foreground/70 text-xs leading-relaxed">
                 {experienceRole}
               </p>
-            </div>
+            </motion.div>
           </div>
 
           {/* Bio */}
-          <p className="text-foreground/70 text-sm leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
+          <motion.p
+            className="text-foreground/70 text-sm leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
             {description}
-          </p>
+          </motion.p>
 
           {/* Actions */}
-          <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
+          <motion.div
+            className="flex flex-wrap gap-3 justify-center lg:justify-start"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+          >
             <a
-              href={resumeDocx}
+              href={resumePdf}
               download
-              className="group inline-flex items-center gap-2 bg-gold text-white px-5 py-2.5 rounded-lg text-sm font-medium hover:bg-gold/90 transition-all duration-300"
+              className="group relative inline-flex items-center gap-2 bg-gold text-white px-5 py-2.5 rounded-lg text-sm font-medium overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-gold/25"
             >
-              <Download size={15} className="group-hover:translate-y-0.5 transition-transform duration-300" />
-              {btnCV}
+              <Download size={15} className="relative z-10 group-hover:translate-y-0.5 transition-transform duration-300" />
+              <span className="relative z-10">{btnCV}</span>
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-white/30 to-transparent skew-x-[-20deg]" />
             </a>
             <a
               href={resumePdf}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center gap-2 text-foreground px-5 py-2.5 rounded-lg text-sm font-medium border border-foreground/20 hover:border-foreground/40 transition-all duration-300"
+              className="group relative inline-flex items-center gap-2 text-foreground px-5 py-2.5 rounded-lg text-sm font-medium border border-foreground/20 overflow-hidden transition-all duration-300 hover:border-foreground/40"
             >
-              <ExternalLink size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
-              {btnCVView}
+              <ExternalLink size={15} className="relative z-10 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
+              <span className="relative z-10">{btnCVView}</span>
+              <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out bg-gradient-to-r from-transparent via-foreground/10 to-transparent skew-x-[-20deg]" />
             </a>
-          </div>
+          </motion.div>
         </div>
-      </motion.div>
+      </div>
     </section>
   );
 };
