@@ -2,7 +2,7 @@ import { Award, Brain, Download, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
 import { useData } from "../../context/DataContext";
 import { useLanguage } from "../../context/LanguageContext";
-import portrait from "../../assets/portrait.jpg";
+import portrait from "../../assets/heroBackground.png";
 
 const About = () => {
   const { data, loading } = useData();
