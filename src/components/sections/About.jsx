@@ -73,7 +73,7 @@ const About = () => {
       </motion.header>
 
       {/* Main Content */}
-      <div className="grid lg:grid-cols-[280px_1fr] gap-12 lg:gap-16 items-start">
+      <div className="grid lg:grid-cols-[400px_1fr] gap-12 lg:gap-16 items-start">
         {/* Portrait */}
         <motion.div
           className="mx-auto lg:mx-0"
@@ -86,9 +86,8 @@ const About = () => {
             <img
               src={portrait}
               alt="Portrait"
-              className="w-64 h-64 md:w-72 md:h-72 object-cover rounded-2xl shadow-lg shadow-foreground/5 group-hover:shadow-gold/20 group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-500 ease-out"
+              className="w-80 h-80 md:w-96 md:h-96 object-cover object-[90%_top] rounded-full border-2 border-gold/40 shadow-lg shadow-foreground/5 group-hover:shadow-gold/20 group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-500 ease-out"
             />
-            <div className="absolute -bottom-2 -left-2 w-16 h-16 border-l-2 border-b-2 border-gold/40 rounded-bl-2xl group-hover:-bottom-3 group-hover:-left-3 transition-all duration-500 ease-out" />
           </div>
         </motion.div>
 
