@@ -50,46 +50,51 @@ const Skills = () => {
         <h2 className="text-4xl md:text-5xl font-bold tracking-tight">{title}</h2>
       </motion.div>
 
-      {/* Skill Categories */}
-      <div className="space-y-12">
+      {/* Skill Categories — 3-column panels */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {skillCategories.map((category, idx) => {
           const CategoryIcon = iconMap[category.icon];
           return (
             <motion.div
               key={idx}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1 }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: idx * 0.15 }}
               viewport={{ once: true }}
+              className="rounded-2xl border border-foreground/10 bg-foreground/[0.03] p-6"
             >
               {/* Category Title */}
               <div className="flex items-center gap-3 mb-6">
-                <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-gold/10">
-                  {CategoryIcon && <CategoryIcon size={18} className="text-gold" />}
+                <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-gold/10">
+                  {CategoryIcon && <CategoryIcon size={20} className="text-gold" />}
                 </div>
                 <h3 className="text-lg font-semibold text-foreground/90 tracking-wide">
                   {category.title}
                 </h3>
-                <div className="divider-line flex-1 h-px ml-2" />
               </div>
 
-              {/* Skills Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+              {/* Skills List */}
+              <div className="grid grid-cols-2 gap-3">
                 {category.skills.map((skill, index) => {
                   const SkillIcon = iconMap[skill.icon];
                   return (
                     <motion.div
                       key={index}
+                      initial={{ opacity: 0, y: 15 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: idx * 0.15 + index * 0.06 }}
+                      viewport={{ once: true }}
                       whileHover={{ scale: 1.03 }}
-                      className="skill-card group flex flex-col items-center justify-center text-center
-                        py-5 px-3 rounded-xl backdrop-blur-sm
+                      className="group flex flex-col items-center justify-center text-center
+                        py-4 px-3 rounded-xl bg-foreground/[0.03] border border-foreground/10
+                        hover:border-gold/30 hover:-translate-y-1
                         transition-all duration-300 cursor-default"
                     >
                       {SkillIcon && (
                         <SkillIcon
-                          size={32}
+                          size={36}
                           style={{ color: skill.color }}
-                          className="mb-3 opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                          className="mb-3 opacity-90 group-hover:opacity-100 group-hover:animate-bounce transition-opacity duration-300"
                         />
                       )}
                       <span className="text-sm font-medium text-foreground/80 group-hover:text-foreground transition-colors duration-300">

@@ -83,10 +83,11 @@ const About = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
         >
           <div className="group relative">
+            <div className="absolute inset-0 rounded-full bg-gold/0 group-hover:bg-gold/10 transition-all duration-500 ease-out z-10 pointer-events-none" />
             <img
               src={portrait}
               alt="Portrait"
-              className="w-80 h-80 md:w-96 md:h-96 object-cover object-[90%_top] rounded-full border-2 border-gold/40 shadow-lg shadow-foreground/5 group-hover:shadow-gold/20 group-hover:shadow-xl group-hover:scale-[1.03] transition-all duration-500 ease-out"
+              className="w-80 h-80 md:w-96 md:h-96 object-cover object-[90%_top] rounded-full border-2 border-gold/40 shadow-lg shadow-foreground/5 brightness-[1.05] group-hover:brightness-110 group-hover:shadow-gold/30 group-hover:shadow-2xl group-hover:border-gold/60 group-hover:scale-[1.03] transition-all duration-500 ease-out"
             />
           </div>
         </motion.div>
