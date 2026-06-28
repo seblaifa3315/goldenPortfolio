@@ -116,21 +116,12 @@
                 "codeLink": "https://github.com/seblaifa3315/goldenPortfolio"
             },
             {
-                "title": "Book Landing Page",
-                "description": "A promotional website for an author's book, featuring purchase links and author information.",
-                "descriptionFrench": "Un site promotionnel pour le livre d'un auteur, avec des liens d'achat et des informations sur l'auteur.",
-                "image": "/assets/bookSiteThumbnail.png",
-                "tags": ["Next.js", "Tailwind", "Framer Motion"],
-                "viewLink": "https://book-website-tan.vercel.app",
-                "codeLink": "https://github.com/seblaifa3315/book-website"
-            },
-            {
                 "title": "TailShell",
                 "description": "A B2B marketing website for TailShell portable waterproof seat covers, featuring a clean and minimalist design with smooth animations and vendor inquiry system.",
                 "descriptionFrench": "Un site marketing B2B pour les housses de siège portables et imperméables TailShell, avec un design propre et minimaliste, des animations fluides et un système de demande pour les revendeurs.",
                 "image": "/assets/tailShellThumbnail.png",
                 "tags": ["Next.js", "Tailwind", "Framer Motion", "shadcn/ui"],
-                "viewLink": "https://tail-shell.vercel.app",
+                "viewLink": "https://www.tailshell.com",
                 "codeLink": "https://github.com/seblaifa3315/TailShell"
             },
             {
@@ -141,6 +132,24 @@
                 "tags": ["Next.js", "Tailwind", "Framer Motion", "shadcn/ui", "Supabase", "Stripe", "Prisma"],
                 "viewLink": "https://www.sebdev.space",
                 "codeLink": "https://github.com/seblaifa3315/Bracuum"
+            },
+            {
+                "title": "Cue Track Generator",
+                "description": "Full-stack schedule optimization platform for Cirque du Soleil aquatics, using a constraint programming solver to auto-assign divers to show positions while balancing fairness, training, and qualification requirements.",
+                "descriptionFrench": "Application full-stack d'optimisation des horaires pour les spectacles aquatiques du Cirque du Soleil. Elle utilise un solveur de programmation par contraintes afin d'automatiser l'affectation des plongeurs aux rôles du spectacle, en tenant compte de l'équité des rotations, des formations et des qualifications requises.",
+                "image": "/assets/cue_track_generator_thumbnail.png",
+                "tags": ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL", "Prisma", "Supabase", "Python", "OR-Tools", "Recharts"],
+                "viewLink": "https://cue-track-generator.vercel.app/",
+                "codeLink": "https://github.com/seblaifa3315/cue-track-generator"
+            },
+            {
+                "title": "Book Landing Page",
+                "description": "A promotional website for an author's book, featuring purchase links and author information.",
+                "descriptionFrench": "Un site promotionnel pour le livre d'un auteur, avec des liens d'achat et des informations sur l'auteur.",
+                "image": "/assets/bookSiteThumbnail.png",
+                "tags": ["Next.js", "Tailwind", "Framer Motion"],
+                "viewLink": "https://book-website-tan.vercel.app",
+                "codeLink": "https://github.com/seblaifa3315/book-website"
             }
         ]
     },

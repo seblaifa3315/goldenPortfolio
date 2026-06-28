@@ -1,7 +1,7 @@
 import { useData } from "../../context/DataContext";
 import { useLanguage } from "../../context/LanguageContext";
 import { motion, useScroll, useTransform } from "framer-motion";
-import bgImage from "../../assets/testPortrait.png";
+import bgImage from "../../assets/heroBackground.png";
 import TypedText from "../smallComponents/TypedText";
 
 const Hero = () => {
