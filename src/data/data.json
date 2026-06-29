@@ -107,15 +107,6 @@
         "titleFrench": "Projets dont je suis fier",
         "projects": [
             {
-                "title": "Portfolio Website",
-                "description": "A modern personal website built with React and Tailwind.",
-                "descriptionFrench": "Un site personnel moderne construit avec React et Tailwind.",
-                "image": "/assets/portfolioThumbnail.png",
-                "tags": ["React", "Tailwind", "Framer Motion"],
-                "viewLink": "https://www.sebastienlaifa.com/",
-                "codeLink": "https://github.com/seblaifa3315/goldenPortfolio"
-            },
-            {
                 "title": "TailShell",
                 "description": "A B2B marketing website for TailShell portable waterproof seat covers, featuring a clean and minimalist design with smooth animations and vendor inquiry system.",
                 "descriptionFrench": "Un site marketing B2B pour les housses de siège portables et imperméables TailShell, avec un design propre et minimaliste, des animations fluides et un système de demande pour les revendeurs.",
@@ -150,6 +141,15 @@
                 "tags": ["Next.js", "Tailwind", "Framer Motion"],
                 "viewLink": "https://book-website-tan.vercel.app",
                 "codeLink": "https://github.com/seblaifa3315/book-website"
+            },
+            {
+                "title": "Portfolio Website",
+                "description": "A modern personal website built with React and Tailwind.",
+                "descriptionFrench": "Un site personnel moderne construit avec React et Tailwind.",
+                "image": "/assets/portfolioThumbnail.png",
+                "tags": ["React", "Tailwind", "Framer Motion"],
+                "viewLink": "https://www.sebastienlaifa.com/",
+                "codeLink": "https://github.com/seblaifa3315/goldenPortfolio"
             }
         ]
     },
